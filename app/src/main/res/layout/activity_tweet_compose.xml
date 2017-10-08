@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.stwitter.TweetComposeActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tweet Your Heart Out"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="50dp"
+            android:background="@color/tw__solid_white"
+            android:textSize="25dp"
+            android:textColor="@color/colorAccent"
+            />
+
+
+        <Button
+            android:id="@+id/tweet_composer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/tw__blue_default"
+            android:text="twitterComposer" />
+
+        <Button
+            android:id="@+id/organic_composeer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/tw__blue_default"
+            android:text="Twitter Kit Composer"
+            android:layout_margin="80dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

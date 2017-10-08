@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.stwitter.AccountDetailActivity"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+                <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                    android:background="@color/tw__composer_light_gray"
+                android:id="@+id/BanImageView"
+                android:src="@drawable/ic_menu_camera"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/profilepic"
+        android:id="@+id/PictureImageView"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/tw__composer_black"
+        android:id="@+id/Text1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textSize="25dp"
+        android:background="@color/tw__composer_light_gray"
+        android:textColor="@color/tw__composer_black"
+        android:layout_marginTop="30dp"
+        android:id="@+id/Text4"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textSize="25dp"
+        android:background="@color/tw__composer_light_gray"
+        android:textColor="@color/tw__composer_black"
+        android:layout_marginTop="50dp"
+        android:id="@+id/Text2"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:background="@color/tw__composer_light_gray"
+    android:textColor="@color/tw__composer_black"
+    android:textSize="25dp"
+    android:layout_marginTop="50dp"
+    android:id="@+id/Text3"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:background="@color/tw__composer_light_gray"
+        android:textColor="@color/tw__composer_black"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/Text5"/>
+
+
+</LinearLayout>

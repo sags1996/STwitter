@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.stwitter">
+
+    <permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".CustomApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/tw__composer_logo_blue"
+        android:label="Stwitter"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LoginStartActivity" />
+        <activity android:name=".LaunchPageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TweetComposeActivity" />
+        <activity android:name=".TweetViewActivity" />
+
+        <receiver
+            android:name=".TweetSuccessReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".TweetFailureReciever"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".UserProfileActivity"
+            android:label="@string/title_activity_user_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FollowerListActivity" />
+        <activity android:name=".FollowingListActivity" />
+        <activity android:name=".DirectMessageListActivity" />
+        <activity android:name=".DMViewActivity" />
+        <activity android:name=".TrendListActivity" />
+        <activity android:name=".TrendViewActivity" />
+        <activity android:name=".ShowListActivity" />
+        <activity android:name=".AccountDetailActivity"></activity>
+    </application>
+
+</manifest>
